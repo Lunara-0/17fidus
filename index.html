@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -7,617 +8,19 @@
   <meta name="description" content="Cabinet fiduciaire à Casablanca spécialisé en comptabilité, fiscalité et conseil aux entreprises. Services personnalisés pour votre réussite financière.">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
-  <style>
-    :root {
-      --primary: #8b2121;
-      --primary-dark: #701a1a;
-      --secondary: #f8f1ee;
-      --text: #333333;
-      --light: #ffffff;
-      --gray: #f5f5f5;
-      --dark-gray: #e0e0e0;
-    }
-    
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-    
-    html {
-      scroll-behavior: smooth;
-    }
-    
-    body {
-      background-color: var(--light);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    
-    h1, h2, h3, h4 {
-      font-weight: 600;
-      line-height: 1.3;
-    }
-    
-    /* Header */
-    .header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: rgba(255, 255, 255, 0.95);
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      z-index: 1000;
-      transition: all 0.3s ease;
-    }
-    
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-    
-    .nav-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 0;
-    }
-    
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-    
-    .logo img {
-      height: 60px;
-      width: auto;
-    }
-    
-    .logo-text h1 {
-      font-size: 1.8rem;
-      color: var(--primary);
-      margin: 0;
-    }
-    
-    .logo-text p {
-      font-size: 0.9rem;
-      color: var(--text);
-      opacity: 0.8;
-    }
-    
-    .nav-links {
-      display: flex;
-      gap: 30px;
-    }
-    
-    .nav-links a {
-      color: var(--text);
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 1rem;
-      transition: all 0.3s ease;
-      position: relative;
-    }
-    
-    .nav-links a:after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2px;
-      bottom: -5px;
-      left: 0;
-      background-color: var(--primary);
-      transition: width 0.3s ease;
-    }
-    
-    .nav-links a:hover:after {
-      width: 100%;
-    }
-    
-    .mobile-menu-btn {
-      display: none;
-      background: none;
-      border: none;
-      font-size: 1.5rem;
-      color: var(--primary);
-      cursor: pointer;
-    }
-    
-    /* Hero Section */
-    .hero {
-      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1200/600') no-repeat center center;
-      background-size: cover;
-      height: 85vh;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      color: var(--light);
-      padding-top: 90px;
-    }
-    
-    .hero-content {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
-    
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-      font-weight: 300;
-    }
-    
-    .btn {
-      display: inline-block;
-      padding: 12px 30px;
-      background-color: var(--primary);
-      color: var(--light);
-      border: none;
-      border-radius: 5px;
-      font-weight: 500;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      cursor: pointer;
-    }
-    
-    .btn:hover {
-      background-color: var(--primary-dark);
-      transform: translateY(-2px);
-    }
-    
-    .btn-outline {
-      background-color: transparent;
-      border: 2px solid var(--light);
-      margin-left: 15px;
-    }
-    
-    .btn-outline:hover {
-      background-color: var(--light);
-      color: var(--primary);
-    }
-    
-    /* Section Styling */
-    section {
-      padding: 100px 0;
-    }
-    
-    .section-title {
-      text-align: center;
-      margin-bottom: 60px;
-    }
-    
-    .section-title h2 {
-      font-size: 2.5rem;
-      color: var(--primary);
-      margin-bottom: 15px;
-      position: relative;
-      display: inline-block;
-    }
-    
-    .section-title h2:after {
-      content: '';
-      position: absolute;
-      width: 60px;
-      height: 3px;
-      background-color: var(--primary);
-      bottom: -10px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    
-    .section-title p {
-      color: var(--text);
-      font-size: 1.1rem;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-    
-    /* About Section */
-    .about {
-      background-color: var(--gray);
-    }
-    
-    .about-content {
-      display: flex;
-      gap: 40px;
-      align-items: center;
-    }
-    
-    .about-text {
-      flex: 1;
-    }
-    
-    .about-image {
-      flex: 1;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    }
-    
-    .about-image img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    
-    .about-text h3 {
-      font-size: 1.5rem;
-      margin-bottom: 20px;
-      color: var(--primary);
-    }
-    
-    .about-text p {
-      margin-bottom: 20px;
-    }
-    
-    .gerant-box {
-      background-color: var(--light);
-      padding: 30px;
-      border-left: 4px solid var(--primary);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-      border-radius: 5px;
-      margin-top: 30px;
-    }
-    
-    .gerant-box h3 {
-      margin-bottom: 10px;
-    }
-    
-    /* Services Section */
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
-    }
-    
-    .service-card {
-      background-color: var(--light);
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-      transition: all 0.3s ease;
-    }
-    
-    .service-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    }
-    
-    .service-icon {
-      background-color: var(--secondary);
-      padding: 30px;
-      text-align: center;
-    }
-    
-    .service-icon i {
-      font-size: 2.5rem;
-      color: var(--primary);
-    }
-    
-    .service-content {
-      padding: 30px;
-    }
-    
-    .service-content h3 {
-      font-size: 1.3rem;
-      margin-bottom: 15px;
-      color: var(--primary);
-    }
-    
-    .service-content p {
-      margin-bottom: 15px;
-    }
-    
-    /* Testimonials Section */
-    .testimonials {
-      background-color: var(--gray);
-    }
-    
-    .testimonial-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-      gap: 30px;
-    }
-    
-    .testimonial-card {
-      background-color: var(--light);
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    }
-    
-    .testimonial-text {
-      font-style: italic;
-      margin-bottom: 20px;
-    }
-    
-    .testimonial-author {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-    
-    .author-image {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      overflow: hidden;
-    }
-    
-    .author-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    
-    .author-info h4 {
-      font-size: 1.1rem;
-      margin-bottom: 5px;
-    }
-    
-    .author-info p {
-      font-size: 0.9rem;
-      color: var(--text);
-      opacity: 0.8;
-    }
-    
-    /* Contact Section */
-    .contact-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 50px;
-    }
-    
-    .contact-info {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-    }
-    
-    .contact-item {
-      display: flex;
-      gap: 20px;
-    }
-    
-    .contact-icon {
-      font-size: 1.5rem;
-      color: var(--primary);
-      min-width: 30px;
-    }
-    
-    .contact-details h3 {
-      font-size: 1.2rem;
-      margin-bottom: 5px;
-    }
-    
-    .contact-details p, .contact-details a {
-      color: var(--text);
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
-    
-    .contact-details a:hover {
-      color: var(--primary);
-    }
-    
-    .contact-form {
-      background-color: var(--light);
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    }
-    
-    .form-group {
-      margin-bottom: 20px;
-    }
-    
-    .form-group label {
-      display: block;
-      margin-bottom: 8px;
-      font-weight: 500;
-    }
-    
-    .form-control {
-      width: 100%;
-      padding: 12px 15px;
-      border: 1px solid var(--dark-gray);
-      border-radius: 5px;
-      font-size: 1rem;
-      transition: all 0.3s ease;
-    }
-    
-    .form-control:focus {
-      outline: none;
-      border-color: var(--primary);
-      box-shadow: 0 0 0 2px rgba(139, 33, 33, 0.1);
-    }
-    
-    textarea.form-control {
-      min-height: 150px;
-      resize: vertical;
-    }
-    
-    /* Footer */
-    footer {
-      background-color: #1a1a1a;
-      color: var(--light);
-      padding: 60px 0 20px;
-    }
-    
-    .footer-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 40px;
-      margin-bottom: 40px;
-    }
-    
-    .footer-col h3 {
-      font-size: 1.3rem;
-      margin-bottom: 20px;
-      position: relative;
-      padding-bottom: 10px;
-    }
-    
-    .footer-col h3:after {
-      content: '';
-      position: absolute;
-      width: 40px;
-      height: 2px;
-      background-color: var(--primary);
-      bottom: 0;
-      left: 0;
-    }
-    
-    .footer-col p {
-      margin-bottom: 20px;
-      opacity: 0.8;
-    }
-    
-    .footer-links {
-      list-style: none;
-    }
-    
-    .footer-links li {
-      margin-bottom: 10px;
-    }
-    
-    .footer-links a {
-      color: var(--light);
-      text-decoration: none;
-      opacity: 0.8;
-      transition: all 0.3s ease;
-    }
-    
-    .footer-links a:hover {
-      opacity: 1;
-      color: var(--primary);
-      padding-left: 5px;
-    }
-    
-    .social-links {
-      display: flex;
-      gap: 15px;
-      margin-top: 20px;
-    }
-    
-    .social-links a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 40px;
-      height: 40px;
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 50%;
-      color: var(--light);
-      font-size: 1.2rem;
-      transition: all 0.3s ease;
-    }
-    
-    .social-links a:hover {
-      background-color: var(--primary);
-      transform: translateY(-3px);
-    }
-    
-    .footer-bottom {
-      text-align: center;
-      padding-top: 20px;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-    }
-    
-    /* Responsive Design */
-    @media screen and (max-width: 991px) {
-      .about-content {
-        flex-direction: column;
-      }
-      
-      .contact-container {
-        grid-template-columns: 1fr;
-      }
-    }
-    
-    @media screen and (max-width: 768px) {
-      .nav-links {
-        position: fixed;
-        top: 90px;
-        left: -100%;
-        width: 100%;
-        background-color: var(--light);
-        flex-direction: column;
-        padding: 20px;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-        transition: 0.3s;
-      }
-      
-      .nav-links.active {
-        left: 0;
-      }
-      
-      .mobile-menu-btn {
-        display: block;
-      }
-      
-      .hero h1 {
-        font-size: 2.2rem;
-      }
-      
-      .hero p {
-        font-size: 1rem;
-      }
-      
-      section {
-        padding: 70px 0;
-      }
-      
-      .section-title h2 {
-        font-size: 2rem;
-      }
-    }
-    
-    @media screen and (max-width: 576px) {
-      .logo-text h1 {
-        font-size: 1.5rem;
-      }
-      
-      .logo-text p {
-        font-size: 0.8rem;
-      }
-      
-      .hero {
-        height: 80vh;
-      }
-      
-      .btn {
-        display: block;
-        width: 100%;
-        margin-bottom: 10px;
-      }
-      
-      .btn-outline {
-        margin-left: 0;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- Header -->
   <header class="header">
     <div class="container">
       <div class="nav-container">
         <div class="logo">
           <a href="https://17fidus.com">
-            <img src="/api/placeholder/120/120" alt="17.jpg" />
+            <img src="17fidus.png" alt="Logo 17 FIDUS" />
           </a>
           <div class="logo-text">
-            <a href="https://17fidus.netlify.app" style="text-decoration: none; color: inherit;">
+            <a href="https://17fidus.com" style="text-decoration: none; color: inherit;">
               <h1>17 FIDUS</h1>
               <p>Cabinet Fiduciaire – Expertise & Accompagnement</p>
             </a>
@@ -640,7 +43,6 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
   <section class="hero" id="accueil">
     <div class="container">
       <div class="hero-content">
@@ -654,7 +56,6 @@
     </div>
   </section>
 
-  <!-- About Section -->
   <section class="about" id="apropos">
     <div class="container">
       <div class="section-title">
@@ -672,19 +73,18 @@
           <div class="gerant-box">
             <h3>Adil Ben Serrakh</h3>
             <p>Gérant – Comptable agréé par l'État</p>
-            <p>Fort de plus de 20 ans d'expérience dans le domaine de la comptabilité et du conseil fiscal, M. Ben Serrakh met son expertise au service de votre réussite.</p>
-            <p>Numéro d'agrément : <strong>(à insérer si disponible)</strong></p>
+            <p>Fort de plus de 15 ans d'expérience dans le domaine de la comptabilité et du conseil fiscal, M. Ben Serrakh met son expertise au service de votre réussite.</p>
+            <p>Passionné par son métier, il s'engage à vous fournir des conseils avisés et une assistance de qualité pour optimiser la gestion de votre entreprise.</p>
           </div>
         </div>
         
         <div class="about-image">
-          <img src="/api/placeholder/600/600" alt="17.jpg" />
+          <img src="/api/placeholder/600/600" alt="Cabinet 17 FIDUS" />
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services Section -->
   <section id="services">
     <div class="container">
       <div class="section-title">
@@ -756,7 +156,6 @@
     </div>
   </section>
 
-  <!-- Testimonials Section -->
   <section class="testimonials">
     <div class="container">
       <div class="section-title">
@@ -786,7 +185,7 @@
           </div>
           <div class="testimonial-author">
             <div class="author-image">
-              <img src="/api/placeholder/100/100" alt="17.jpg" />
+              <img src="/api/placeholder/100/100" alt="Client" />
             </div>
             <div class="author-info">
               <h4>Samira Bennani</h4>
@@ -801,7 +200,7 @@
           </div>
           <div class="testimonial-author">
             <div class="author-image">
-              <img src="/api/placeholder/100/100" alt="17.jpg" />
+              <img src="/api/placeholder/100/100" alt="Client" />
             </div>
             <div class="author-info">
               <h4>Karim Alaoui</h4>
@@ -813,7 +212,6 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
   <section id="contact">
     <div class="container">
       <div class="section-title">
@@ -829,7 +227,7 @@
             </div>
             <div class="contact-details">
               <h3>Notre Adresse</h3>
-              <p>283, Bd YAACOUB El Mansour, 1er étage N°3, Casablanca</p>
+              <p>283, Bd YAACOUP El Mansour, 1er étage N°3, Casablanca</p>
             </div>
           </div>
           
@@ -860,7 +258,7 @@
             </div>
             <div class="contact-details">
               <h3>Horaires d'Ouverture</h3>
-              <p>Lundi - Vendredi: 9h00 - 17h00</p>
+              <p>Lundi - Vendredi: 9h00 - 18h00</p>
               <p>Samedi: 9h00 - 13h00</p>
             </div>
           </div>
@@ -901,13 +299,12 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <div class="container">
       <div class="footer-container">
         <div class="footer-col">
           <h3><a href="https://17fidus.com" style="text-decoration: none; color: inherit;">17 FIDUS</a></h3>
-          <p>Cabinet fiduciaire spécialisé dans l'accompagnement des entreprises et des particuliers. Notre expertise à votre service depuis plus de 20 ans.</p>
+          <p>Cabinet fiduciaire spécialisé dans l'accompagnement des entreprises et des particuliers. Notre expertise à votre service depuis plus de 10 ans.</p>
           <div class="social-links">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -939,85 +336,12 @@
       </div>
       
       <div class="footer-bottom">
-        <p>&copy; 2025 <a href="https://17fidus.netlify.app" style="text-decoration: none; color: inherit;">17 FIDUS</a> – Tous droits réservés. Cabinet Fiduciaire à Casablanca.</p>
+        <p>&copy; 2025 <a href="https://17fidus.com" style="text-decoration: none; color: inherit;">17 FIDUS</a> – Tous droits réservés. Cabinet Fiduciaire à Casablanca.</p>
       </div>
     </div>
   </footer>
 
-  <!-- JavaScript for Mobile Menu -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-      const navLinks = document.getElementById('navLinks');
-      
-      // Toggle mobile menu
-      mobileMenuBtn.addEventListener('click', function() {
-        navLinks.classList.toggle('active');
-        const icon = mobileMenuBtn.querySelector('i');
-        if (navLinks.classList.contains('active')) {
-          icon.classList.remove('fa-bars');
-          icon.classList.add('fa-times');
-        } else {
-          icon.classList.remove('fa-times');
-          icon.classList.add('fa-bars');
-        }
-      });
-      
-      // Close menu when clicking on a link
-      const links = navLinks.querySelectorAll('a');
-      links.forEach(link => {
-        link.addEventListener('click', function() {
-          navLinks.classList.remove('active');
-          const icon = mobileMenuBtn.querySelector('i');
-          icon.classList.remove('fa-times');
-          icon.classList.add('fa-bars');
-        });
-      });
-      
-      // Smooth scrolling for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-          e.preventDefault();
-          const targetId = this.getAttribute('href');
-          if (targetId === '#') return;
-          
-          const targetElement = document.querySelector(targetId);
-          if (targetElement) {
-            const headerHeight = document.querySelector('.header').offsetHeight;
-            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-            
-            window.scrollTo({
-              top: targetPosition,
-              behavior: 'smooth'
-            });
-          }
-        });
-      });
-      
-      // Header scroll effect
-      const header = document.querySelector('.header');
-      window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-          header.style.padding = '5px 0';
-          header.style.boxShadow = '0 2px 15px rgba(0, 0, 0, 0.1)';
-        } else {
-          header.style.padding = '';
-          header.style.boxShadow = '';
-        }
-      });
-      
-      // Form submission
-      const contactForm = document.getElementById('contactForm');
-      if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-          e.preventDefault();
-          // Here you would normally send the form data to a server
-          // For now, let's just show a success message
-          alert('Votre message a été envoyé avec succès! Nous vous contacterons bientôt.');
-          contactForm.reset();
-        });
-      }
-    });
-  </script>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="style.css">
 </body>
 </html>
