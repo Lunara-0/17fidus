@@ -1,347 +1,273 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>17 FIDUS - Cabinet Fiduciaire à Casablanca | Expertise Comptable</title>
-  <meta name="description" content="Cabinet fiduciaire à Casablanca spécialisé en comptabilité, fiscalité et conseil aux entreprises. Services personnalisés pour votre réussite financière.">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <title>17 FIDUS – Cabinet Fiduciaire à Casablanca</title>
+  <meta name="description" content="Cabinet fiduciaire à Casablanca, spécialiste de la comptabilité, fiscalité, gestion d'entreprise et accompagnement sur-mesure.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 </head>
-
 <body>
+  <!-- HEADER & HERO -->
   <header class="header">
-    <div class="container">
-      <div class="nav-container">
-        <div class="logo">
-          <a href="https://17fidus.com">
-            <img src="17fidus.png" alt="Logo 17 FIDUS" />
-          </a>
-          <div class="logo-text">
-            <a href="https://17fidus.com" style="text-decoration: none; color: inherit;">
-              <h1>17 FIDUS</h1>
-              <p>Cabinet Fiduciaire – Expertise & Accompagnement</p>
-            </a>
-          </div>
+    <div class="container nav-container">
+      <div class="logo">
+        <img src="17fidus.png" alt="Logo 17 FIDUS">
+        <div class="logo-text">
+          <h1>17 FIDUS</h1>
+          <p>Votre partenaire fiduciaire à Casablanca</p>
         </div>
-        
-        <nav>
-          <ul class="nav-links" id="navLinks">
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#apropos">À propos</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        
-        <button class="mobile-menu-btn" id="mobileMenuBtn">
-          <i class="fas fa-bars"></i>
-        </button>
       </div>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#equipe">Équipe</a></li>
+          <li><a href="#engagements">Engagements</a></li>
+          <li><a href="#temoignages">Avis</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
   </header>
 
-  <section class="hero" id="accueil">
-    <div class="container">
-      <div class="hero-content">
-        <h1>Votre Partenaire Fiduciaire à Casablanca</h1>
-        <p>Expertise comptable, fiscale et conseil en gestion pour votre entreprise</p>
+  <section class="hero section-animate" id="accueil">
+    <div class="container hero-flex">
+      <div class="hero-left">
+        <h2>Expertise comptable, fiscale et juridique</h2>
+        <h1>Un cabinet moderne et humain au service de votre entreprise</h1>
+        <p>17 FIDUS accompagne PME, entrepreneurs et professions libérales avec transparence, proximité et innovation.</p>
         <div class="hero-buttons">
-          <a href="#contact" class="btn">Nous contacter</a>
-          <a href="#services" class="btn btn-outline">Nos services</a>
+          <a href="#contact" class="btn">Demander un devis</a>
+          <a href="#services" class="btn btn-outline">Voir nos services</a>
         </div>
+      </div>
+      <div class="hero-right">
+        <img src="17.png" alt="Photo équipe 17 FIDUS" />
       </div>
     </div>
   </section>
 
-  <section class="about" id="apropos">
+  <!-- ENGAGEMENTS -->
+  <section class="engagements section-animate" id="engagements">
     <div class="container">
       <div class="section-title">
-        <h2>À Propos de Nous</h2>
-        <p>Votre réussite est notre priorité</p>
+        <h2>Nos Engagements</h2>
       </div>
-      
-      <div class="about-content">
-        <div class="about-text">
-          <h3>Qui Sommes-Nous?</h3>
-          <p>17 FIDUS est un cabinet fiduciaire de référence à Casablanca, spécialisé dans l'accompagnement des entreprises et des particuliers en matière de fiscalité, comptabilité et gestion administrative.</p>
-          <p>Notre mission est de vous offrir un service de proximité, personnalisé et rigoureux pour vous permettre de vous concentrer sur votre cœur de métier en toute sérénité.</p>
-          <p>Avec une équipe d'experts qualifiés et une approche centrée sur le client, nous vous assurons un accompagnement sur mesure adapté à vos besoins spécifiques.</p>
-          
-          <div class="gerant-box">
-            <h3>Adil Ben Serrakh</h3>
-            <p>Gérant – Comptable agréé par l'État</p>
-            <p>Fort de plus de 15 ans d'expérience dans le domaine de la comptabilité et du conseil fiscal, M. Ben Serrakh met son expertise au service de votre réussite.</p>
-            <p>Passionné par son métier, il s'engage à vous fournir des conseils avisés et une assistance de qualité pour optimiser la gestion de votre entreprise.</p>
-          </div>
+      <div class="engagements-grid">
+        <div class="engagement-card">
+          <i class="fas fa-user-shield"></i>
+          <h3>Transparence</h3>
+          <p>Honoraires clairs, pas de mauvaise surprise, communication honnête.</p>
         </div>
-        
-        <div class="about-image">
-          <img src="/api/placeholder/600/600" alt="Cabinet 17 FIDUS" />
+        <div class="engagement-card">
+          <i class="fas fa-handshake"></i>
+          <h3>Accompagnement humain</h3>
+          <p>Un interlocuteur dédié, disponible, à l’écoute de vos besoins.</p>
+        </div>
+        <div class="engagement-card">
+          <i class="fas fa-bolt"></i>
+          <h3>Réactivité</h3>
+          <p>Des réponses rapides, des conseils concrets et une grande disponibilité.</p>
+        </div>
+        <div class="engagement-card">
+          <i class="fas fa-lightbulb"></i>
+          <h3>Conseil sur-mesure</h3>
+          <p>Des solutions adaptées à votre secteur, taille et ambitions.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="services">
+  <!-- SERVICES -->
+  <section class="services section-animate" id="services">
     <div class="container">
       <div class="section-title">
         <h2>Nos Services</h2>
-        <p>Des solutions adaptées à vos besoins</p>
+        <p>Des solutions adaptées à chaque étape de la vie de votre entreprise</p>
       </div>
-      
       <div class="services-grid">
         <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-calculator"></i>
-          </div>
-          <div class="service-content">
-            <h3>Comptabilité & Tenue des Comptes</h3>
-            <p>Nous assurons la tenue complète de votre comptabilité conformément aux normes en vigueur. Notre équipe s'occupe de l'enregistrement des écritures, des rapprochements bancaires et de l'établissement des états financiers.</p>
-          </div>
+          <i class="fas fa-calculator"></i>
+          <h3>Comptabilité</h3>
+          <p>Tenue et révision comptable, situations intermédiaires, bilan, conseils de gestion.</p>
         </div>
-        
         <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-file-invoice"></i>
-          </div>
-          <div class="service-content">
-            <h3>Déclarations Fiscales & TVA</h3>
-            <p>Nous préparons et déposons vos déclarations fiscales dans les délais impartis : IR, IS, TVA, etc. Notre expertise vous garantit une conformité totale et une optimisation fiscale légale.</p>
-          </div>
+          <i class="fas fa-file-invoice"></i>
+          <h3>Fiscalité</h3>
+          <p>Déclarations fiscales (IS, TVA, IR...), optimisation fiscale, veille réglementaire.</p>
         </div>
-        
         <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-building"></i>
-          </div>
-          <div class="service-content">
-            <h3>Création d'Entreprise</h3>
-            <p>Nous vous accompagnons dans toutes les démarches de création de votre entreprise : choix de la forme juridique, rédaction des statuts, formalités administratives et obtention des autorisations nécessaires.</p>
-          </div>
+          <i class="fas fa-gavel"></i>
+          <h3>Juridique</h3>
+          <p>Création d’entreprise, secrétariat juridique, modifications statutaires.</p>
         </div>
-        
         <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-map-marker-alt"></i>
-          </div>
-          <div class="service-content">
-            <h3>Domiciliation Commerciale</h3>
-            <p>Bénéficiez d'une adresse professionnelle pour votre siège social. Notre service de domiciliation vous offre une solution pratique et économique pour établir votre entreprise à Casablanca.</p>
-          </div>
+          <i class="fas fa-briefcase"></i>
+          <h3>Social & Paie</h3>
+          <p>Paye, déclarations sociales, conseils RH, assistance en cas de contrôle.</p>
         </div>
-        
         <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-chart-line"></i>
-          </div>
-          <div class="service-content">
-            <h3>Conseil en Gestion</h3>
-            <p>Nous vous offrons un accompagnement stratégique pour optimiser la performance de votre entreprise : analyse financière, tableaux de bord, prévisions budgétaires et conseil en développement.</p>
-          </div>
-        </div>
-        
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-balance-scale"></i>
-          </div>
-          <div class="service-content">
-            <h3>Accompagnement Juridique</h3>
-            <p>Notre équipe vous assiste dans les aspects juridiques de votre activité : rédaction de contrats, modifications statutaires, secrétariat juridique et conseil en droit des affaires.</p>
-          </div>
+          <i class="fas fa-chart-line"></i>
+          <h3>Conseil & Pilotage</h3>
+          <p>Business plan, tableaux de bord, gestion de trésorerie, accompagnement dirigeant.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="testimonials">
+  <!-- EQUIPE -->
+  <section class="equipe section-animate" id="equipe">
     <div class="container">
       <div class="section-title">
-        <h2>Témoignages</h2>
-        <p>Ce que nos clients disent de nous</p>
+        <h2>Notre Équipe</h2>
       </div>
-      
-      <div class="testimonial-grid">
-        <div class="testimonial-card">
-          <div class="testimonial-text">
-            <p>"17 FIDUS nous accompagne depuis la création de notre entreprise. Leur professionnalisme et leur réactivité ont été déterminants dans notre croissance. Je recommande vivement leurs services."</p>
-          </div>
-          <div class="testimonial-author">
-            <div class="author-image">
-              <img src="/api/placeholder/100/100" alt="Client" />
-            </div>
-            <div class="author-info">
-              <h4>Ahmed Tazi</h4>
-              <p>Directeur, Société Horizon</p>
-            </div>
-          </div>
+      <div class="equipe-content">
+        <div class="equipe-photo">
+          <img src="17.png" alt="Equipe 17 FIDUS">
         </div>
-        
-        <div class="testimonial-card">
-          <div class="testimonial-text">
-            <p>"L'expertise fiscale de M. Ben Serrakh nous a permis d'optimiser significativement notre situation. Un cabinet qui allie compétence et proximité, une valeur sûre à Casablanca."</p>
-          </div>
-          <div class="testimonial-author">
-            <div class="author-image">
-              <img src="/api/placeholder/100/100" alt="Client" />
-            </div>
-            <div class="author-info">
-              <h4>Samira Bennani</h4>
-              <p>Gérante, SB Consulting</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="testimonial-card">
-          <div class="testimonial-text">
-            <p>"Un accompagnement sur mesure et des conseils pertinents qui nous ont fait gagner un temps précieux. L'équipe de 17 FIDUS est à l'écoute et trouve toujours des solutions adaptées."</p>
-          </div>
-          <div class="testimonial-author">
-            <div class="author-image">
-              <img src="/api/placeholder/100/100" alt="Client" />
-            </div>
-            <div class="author-info">
-              <h4>Karim Alaoui</h4>
-              <p>Fondateur, KA Technologies</p>
-            </div>
-          </div>
+        <div class="equipe-bio">
+          <h3>Adil Ben Serrakh</h3>
+          <p>Expert-comptable & fondateur</p>
+          <p>15+ ans d’expérience en accompagnement des entreprises et indépendants. Proximité et conseil au cœur de sa pratique.</p>
+          <ul>
+            <li>Expertise reconnue en fiscalité et gestion</li>
+            <li>Accompagnement de la création à la transmission</li>
+            <li>Équipe pluridisciplinaire & dynamique</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact">
+  <!-- TEMOIGNAGES -->
+  <section class="temoignages section-animate" id="temoignages">
     <div class="container">
       <div class="section-title">
-        <h2>Contactez-Nous</h2>
-        <p>Nous sommes à votre écoute</p>
+        <h2>Ils nous font confiance</h2>
       </div>
-      
-      <div class="contact-container">
-        <div class="contact-info">
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div class="contact-details">
-              <h3>Notre Adresse</h3>
-              <p>283, Bd YAACOUB El Mansour, 1er étage N°3, Casablanca</p>
-            </div>
-          </div>
-          
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-phone-alt"></i>
-            </div>
-            <div class="contact-details">
-              <h3>Téléphone</h3>
-              <p>Fixe: 0522 47 12 34</p>
-              <p>Mobile: 0661 99 13 03</p>
-            </div>
-          </div>
-          
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <div class="contact-details">
-              <h3>Email</h3>
-              <p><a href="mailto:17Fidus@gmail.com">17Fidus@gmail.com</a></p>
-            </div>
-          </div>
-          
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-clock"></i>
-            </div>
-            <div class="contact-details">
-              <h3>Horaires d'Ouverture</h3>
-              <p>Lundi - Vendredi: 9h00 - 18h00</p>
-              <p>Samedi: 9h00 - 13h00</p>
-            </div>
+      <div class="temoignages-grid">
+        <div class="temoignage-card">
+          <img src="17.png" alt="Client heureux">
+          <div>
+            <p>“L’équipe 17 FIDUS est très professionnelle et toujours réactive à nos demandes. Leur accompagnement comptable et fiscal nous a permis de nous concentrer sur notre cœur de métier.”</p>
+            <h4>Ahmed Tazi <span>– Directeur, Société Horizon</span></h4>
           </div>
         </div>
-        
-        <div class="contact-form">
-          <h3>Envoyez-nous un message</h3>
-          <form id="contactForm">
-            <div class="form-group">
-              <label for="name">Nom complet</label>
-              <input type="text" id="name" class="form-control" required>
-            </div>
-            
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" class="form-control" required>
-            </div>
-            
-            <div class="form-group">
-              <label for="phone">Téléphone</label>
-              <input type="tel" id="phone" class="form-control">
-            </div>
-            
-            <div class="form-group">
-              <label for="subject">Sujet</label>
-              <input type="text" id="subject" class="form-control">
-            </div>
-            
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" class="form-control" required></textarea>
-            </div>
-            
-            <button type="submit" class="btn">Envoyer le message</button>
-          </form>
+        <div class="temoignage-card">
+          <img src="17.png" alt="Client satisfait">
+          <div>
+            <p>“Très bon cabinet, sérieux, moderne et efficace. Merci pour vos précieux conseils et votre disponibilité !”</p>
+            <h4>Samira Bennani <span>– Gérante, SB Consulting</span></h4>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- FAQ -->
+  <section class="faq section-animate" id="faq">
+    <div class="container">
+      <div class="section-title">
+        <h2>Questions fréquentes</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">Quels sont vos tarifs ?</button>
+          <div class="faq-answer">
+            <p>Nos honoraires sont adaptés à chaque situation. Contactez-nous pour un devis personnalisé gratuit !</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Proposez-vous un accompagnement à distance ?</button>
+          <div class="faq-answer">
+            <p>Oui, nous sommes équipés pour travailler à distance sur tous vos dossiers, où que vous soyez.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Gérez-vous les déclarations fiscales et sociales ?</button>
+          <div class="faq-answer">
+            <p>Oui, nous prenons en charge toutes vos obligations déclaratives, fiscales et sociales.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section-animate" id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contactez-nous</h2>
+      </div>
+      <div class="contact-content">
+        <div class="contact-infos">
+          <h3>17 FIDUS</h3>
+          <p>283, Bd YAACOUB El Mansour, 1er étage N°3, Casablanca</p>
+          <p><i class="fas fa-phone-alt"></i> 0522 47 12 34</p>
+          <p><i class="fas fa-mobile-alt"></i> 0661 99 13 03</p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:17Fidus@gmail.com">17Fidus@gmail.com</a></p>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Nom complet</label>
+            <input type="text" id="name" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Sujet</label>
+            <input type="text" id="subject" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" class="form-control" required></textarea>
+          </div>
+          <button type="submit" class="btn">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
     <div class="container">
-      <div class="footer-container">
-        <div class="footer-col">
-          <h3><a href="https://17fidus.com" style="text-decoration: none; color: inherit;">17 FIDUS</a></h3>
-          <p>Cabinet fiduciaire spécialisé dans l'accompagnement des entreprises et des particuliers. Notre expertise à votre service depuis plus de 10 ans.</p>
+      <div class="footer-content">
+        <div>
+          <img src="17fidus.png" alt="Logo 17 FIDUS" style="height:40px;">
+          <p>Cabinet fiduciaire moderne à Casablanca. Expertise, proximité, solutions sur-mesure.</p>
+        </div>
+        <div>
+          <p><b>Liens utiles</b></p>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#equipe">Notre équipe</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p><b>Suivez-nous</b></p>
           <div class="social-links">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
-        
-        <div class="footer-col">
-          <h3>Nos Services</h3>
-          <ul class="footer-links">
-            <li><a href="#services">Comptabilité & Tenue des Comptes</a></li>
-            <li><a href="#services">Déclarations Fiscales & TVA</a></li>
-            <li><a href="#services">Création d'Entreprise</a></li>
-            <li><a href="#services">Domiciliation Commerciale</a></li>
-            <li><a href="#services">Conseil en Gestion</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-col">
-          <h3>Liens Utiles</h3>
-          <ul class="footer-links">
-            <li><a href="#apropos">À propos de nous</a></li>
-            <li><a href="#contact">Contactez-nous</a></li>
-            <li><a href="#">Politique de confidentialité</a></li>
-            <li><a href="#">Conditions générales</a></li>
-            <li><a href="#">FAQ</a></li>
-          </ul>
-        </div>
       </div>
-      
       <div class="footer-bottom">
-        <p>&copy; 2025 <a href="https://17fidus.com" style="text-decoration: none; color: inherit;">17 FIDUS</a> – Tous droits réservés. Cabinet Fiduciaire à Casablanca.</p>
+        <p>&copy; 2025 17 FIDUS – Tous droits réservés.</p>
       </div>
     </div>
   </footer>
-
   <script src="main.js"></script>
-  <link rel="stylesheet" href="style.css">
 </body>
 </html>
